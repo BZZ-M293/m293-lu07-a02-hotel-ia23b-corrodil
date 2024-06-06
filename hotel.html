@@ -8,7 +8,32 @@
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
+<form action="#">
+  <fieldset>
+    <legend>Zimmertyp</legend>
 
+    <label>
+      Zimmertyp mehrfach-Auswahl
+      <select name="Zimmer auswahl[]" size="3" multiple>
+        <option value="EZ">Einzelzimmer</option>
+        <option value="DZ">Doppelzimmer</option>
+        <option value="S">Suite</option>
+      </select>
+    </label>
+  </fieldset>
 
+  <fieldset>
+    <legend>Zusatzleistungen</legend>
+
+    <input type="checkbox" name="1[]" value="frühstück" id="check1" checked>
+    <label for="check1">Fühstück</label>
+    <input type="checkbox" name="2[]" value="Flughafentransfer" id="check2">
+    <label for="check2">Flughafentransfer</label>
+    <input type="checkbox" name="3[]" value="Spa-Zugang" id="check3">
+    <label for="check3">Spa-Zugang</label>
+    <input type="checkbox" name="4[]" value="RP" id="check4">
+    <label for="check4">reservierter Parkplatz</label>
+  </fieldset>
+  </form>
 </body>
 </html>
